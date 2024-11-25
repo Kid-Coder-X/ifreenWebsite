@@ -32,7 +32,7 @@ completion = client.chat.completions.create(
 	max_tokens=500
 )
 
-print(completion.choices[0].message)
+st.write(completion.choices[0].message)
 #print("_")
 
 @st.cache_resource
