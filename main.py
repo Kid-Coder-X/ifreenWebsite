@@ -124,7 +124,7 @@ with cols[-1]:
             response=completion.choices[0].message["content"]
             with chatBox.chat_message("AI"):
                 st.write(response)
-                st.session_state["history"].append({"AI": response["response"]})
+                st.session_state["history"].append({"AI": response})
 
 st.text(" ")
 listTabs=["About Me","Resume","Experiments","Achievements","Certifications"]
