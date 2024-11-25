@@ -116,7 +116,7 @@ with cols[-1]:
             ]
 
             completion = huggingClient.chat.completions.create(
-                model="Qwen/Qwen2.5-1.5B-Instruct",
+                model="mistralai/Mistral-Nemo-Instruct-2407",
                 messages=messages,
                 max_tokens=300
             )
