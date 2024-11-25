@@ -9,9 +9,12 @@ import base64
 import chromadb
 from ragContext import *
 import ollama
-
+import sys
+__import__('pysqlite3')
 
 st.set_page_config(layout="wide")
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 
 #print("_")
