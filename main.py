@@ -116,9 +116,9 @@ with cols[-1]:
             ]
 
             completion = huggingClient.chat.completions.create(
-                model="microsoft/Phi-3.5-mini-instruct",
+                model="microsoft/Phi-3-mini-4k-instruct",
                 messages=messages,
-                max_tokens=500
+                max_tokens=300
             )
 
             response=completion.choices[0].message["content"]
