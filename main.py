@@ -308,7 +308,7 @@ with tabs[3]:
 
     cols=st.columns([0.67,0.33])
     with cols[0]:
-        st.image("images/Achievements/boston.jpeg")
+        st.image("images/Achievements/Boston.jpeg")
     with cols[1]:
         with st.columns([0.2,0.8])[1]:
             st.text("")
