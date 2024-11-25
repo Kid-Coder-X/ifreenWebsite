@@ -117,6 +117,7 @@ with cols[-1]:
 
             completion = huggingClient.chat.completions.create(
                 model="meta-llama/Llama-3.2-3B-Instruct",
+                temperature=0.0,
                 messages=messages,
                 max_tokens=300
             )
