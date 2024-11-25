@@ -6,12 +6,11 @@ from PIL import ImageOps,Image
 from textContent import *
 from style import *
 import base64
-from ragContext import *
 import ollama
 __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-import chromadb
+from ragContext import *
 st.set_page_config(layout="wide")
 
 
