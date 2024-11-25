@@ -13,26 +13,10 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 from ragContext import *
 import subprocess
 st.set_page_config(layout="wide")
-
-
 from huggingface_hub import InferenceClient
 
 client = InferenceClient(api_key="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")
 
-messages = [
-	{
-		"role": "user",
-		"content": "What is the capital of France?"
-	}
-]
-
-completion = client.chat.completions.create(
-    model="meta-llama/Llama-3.2-3B-Instruct",
-	messages=messages,
-	max_tokens=500
-)
-
-st.write(completion.choices[0].message)
 #print("_")
 
 @st.cache_resource
@@ -124,9 +108,22 @@ with cols[-1]:
             #print(("_____"))
             template_=template.format(st.session_state["history"][-5:],message,str(documents))
             print(template_)
-            response = ollama.generate(model='llama3.2', prompt=template_)
+            messages = [
+                {
+                    "role": "user",
+                    "content": f"{template_}"
+                }
+            ]
+
+            completion = client.chat.completions.create(
+                model="meta-llama/Llama-3.2-3B-Instruct",
+                messages=messages,
+                max_tokens=500
+            )
+
+            response=completion.choices[0].message["content"]
             with chatBox.chat_message("AI"):
-                st.write(response["response"])
+                st.write(response)
                 st.session_state["history"].append({"AI": response["response"]})
 
 st.text(" ")
