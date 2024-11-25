@@ -77,8 +77,8 @@ protobuf==5.28.3
 pyarrow==18.0.0
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
-pydantic==2.10.1
-pydantic_core==2.27.1
+pydantic
+pydantic_core
 pydeck==0.9.1
 Pygments==2.18.0
 pyparsing==3.2.0
