@@ -15,7 +15,7 @@ import subprocess
 st.set_page_config(layout="wide")
 from huggingface_hub import InferenceClient
 
-client = InferenceClient(api_key="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")
+huggingClient = InferenceClient(api_key="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")
 
 #print("_")
 
@@ -115,7 +115,7 @@ with cols[-1]:
                 }
             ]
 
-            completion = client.chat.completions.create(
+            completion = huggingClient.chat.completions.create(
                 model="meta-llama/Llama-3.2-3B-Instruct",
                 messages=messages,
                 max_tokens=500
