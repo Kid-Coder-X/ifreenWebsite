@@ -15,8 +15,24 @@ import subprocess
 st.set_page_config(layout="wide")
 
 
-subprocess.Popen(["./ollama", "start", "--port", "11434"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+from huggingface_hub import InferenceClient
 
+client = InferenceClient(api_key="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")
+
+messages = [
+	{
+		"role": "user",
+		"content": "What is the capital of France?"
+	}
+]
+
+completion = client.chat.completions.create(
+    model="meta-llama/Llama-3.2-3B-Instruct",
+	messages=messages,
+	max_tokens=500
+)
+
+print(completion.choices[0].message)
 #print("_")
 
 @st.cache_resource
