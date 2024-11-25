@@ -297,7 +297,7 @@ with tabs[3]:
         st.image("images/Achievements/logo3.png",width=300)
         st.text("")
         st.text("")
-        st.write("4 Star - Comptetions")
+        st.write("4 Star - Competitions")
 
     st.text("")
     st.text("")
