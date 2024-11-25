@@ -6,7 +6,7 @@ I have developed skills in programming languages like Python & R as well as fram
  
 In my free time, I enjoy contributing to open-source projects and exploring new technologies. This website is a showcase of my work and achievements so far. """
 
-ifreenInfo="26 year old. Brought up in Saudi Arabia from 6 months old till 14 years of age. Studied in IISJubail in Saudi Arabia till class 9. Moved to India at the age of 15. Ifreen did his undergrad at SSN College of Engineering in chennai from 2016-2020. From 2020 October up until August 2024, He was working in various companies in the domain of AI. He moved to USA for his masters in AI at Boston University on August 2024. He has visited countries like HongKong, UAE, Malaysia and Singapore. He loves to code, play games specifically COD and first-person action games. He is also into philosophy and astronomy. He often questions the meaning of life and struggles with existential crisis.  "
+ifreenInfo="I was taken to Saudi Arabia when i was just 6 months old and stayed there up until 14 years of age. Studied in IISJubail in Saudi Arabia till class 9. Ifreen then Moved to India at the age of 15. Ifreen did his undergrad at SSN College of Engineering in chennai from 2016-2020. From 2020 October up until August 2024, He was working in various companies in the domain of AI. He moved to USA for his masters in AI at Boston University on August 2024. He has visited countries like HongKong, UAE, Malaysia and Singapore. He loves to code, play games specifically COD and first-person action games. He is also into philosophy and astronomy. He often questions the meaning of life and struggles with existential crisis.  "
 
 
 
